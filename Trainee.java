@@ -2,7 +2,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+        /*Реализуйте структуру телефонной книги с помощью HashMap.
+        Программа также должна учитывать, что во входной структуре будут повторяющиеся имена с разными телефонами,
+        их необходимо считать, как одного человека с разными телефонами.
+        Вывод должен быть отсортирован по убыванию числа телефонов.
 
+        Пример меню:
+        1) Добавить контакт
+        2) Вывести всех
+        3) Выход
+        Иванов 123432
+        Иванов 546457
+        Иванов 788354
+
+        Map<String, ArrayList> ---- {Иванов:[23145, 456745, 56787], Петров:[4325, 45674]} */
 public class Trainee {
     private static Map<String, ArrayList<String>> tele = new HashMap<>();
     ArrayList<String> pNumbers = new ArrayList<>();
